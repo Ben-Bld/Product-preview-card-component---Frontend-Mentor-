@@ -1,0 +1,196 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.category,
+.description,
+.button {
+  font-family: "Montserrat";
+}
+
+.title,
+.priceContainer {
+  font-family: Fraunces;
+}
+
+.category {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.3em;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 27px;
+  color: pink;
+  line-height: 28px;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+}
+
+.price {
+  font-size: 25px;
+  color: hsl(158, 36%, 37%);
+}
+
+.oldPrice {
+  color: hsl(228, 12%, 48%);
+  font-family: "Monserrat";
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: hwb(159 15% 69%);
+  color: white;
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  margin: 15px 0px;
+  font-size: 13px;
+}
+button img {
+  height: 12px;
+  padding-right: 7px;
+  margin-top: 2px;
+}
+button .btnContent {
+  display: flex;
+  margin: auto;
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+}
+
+.all {
+  width: 500px;
+  height: 100%;
+  margin: auto;
+  background: white;
+  margin-top: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.all .left {
+  width: 50%;
+}
+.all .left img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.all .right {
+  width: 50%;
+  padding: 20px;
+}
+.all .right .title {
+  width: 90%;
+}
+.all .right .priceContainer {
+  display: flex;
+  margin-top: 15px;
+}
+.all .right .oldPrice {
+  padding: 11px 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .all {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+  }
+  .all .left {
+    width: 100%;
+  }
+  .all .left img {
+    height: 279px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
+  .all .right {
+    width: 100%;
+  }
+}

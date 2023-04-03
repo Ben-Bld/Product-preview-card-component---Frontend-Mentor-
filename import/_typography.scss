@@ -1,0 +1,44 @@
+.category,
+.description,
+.button {
+    font-family: 'Montserrat';
+}
+
+.title,
+.priceContainer {
+    font-family: Fraunces;
+}
+
+.category {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3em;
+    font-size: 12px;
+}
+
+.title {
+    font-size: 27px;
+    color: pink;
+    line-height: 28px;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+}
+
+.price {
+    font-size: 25px;
+    color: hsl(158, 36%, 37%);
+}
+
+
+.oldPrice {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Monserrat';
+    font-size: 12px;
+    text-decoration: line-through;
+
+}

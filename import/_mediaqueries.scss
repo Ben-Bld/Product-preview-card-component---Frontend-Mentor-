@@ -1,0 +1,21 @@
+@media  screen and (max-width : 500px) { 
+   .all {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    .left {
+        width: 100%;
+        img {
+            height: 279px;            
+            object-fit: cover;
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+    .right {
+        width: 100%;
+    }
+   }
+}
